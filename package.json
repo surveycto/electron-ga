@@ -1,5 +1,5 @@
 {
-  "name": "electron-ga",
+  "name": "@gpinkham/electron-ga",
   "version": "1.0.6",
   "description": "Google Analytics client for Electron applications",
   "main": "lib/index.js",
@@ -14,7 +14,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jaystack/electron-ga.git"
+    "url": "git+https://github.com/gpinkham/electron-ga.git"
   },
   "keywords": [
     "google",
@@ -48,9 +48,7 @@
     ],
     "testEnvironment": "node"
   },
-  "peerDependencies": {
-    
-  },
+  "peerDependencies": {},
   "devDependencies": {
     "electron": "^2.0.18",
     "@types/electron": "^1.6.10",
