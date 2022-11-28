@@ -1,6 +1,6 @@
-export declare type ParamGetter<T> = () => T;
-export declare type Param<T> = T | ParamGetter<T>;
-export declare type InitParams = {
+export type ParamGetter<T> = () => T;
+export type Param<T> = T | ParamGetter<T>;
+export type InitParams = {
     protocolVersion?: Param<string>;
     trackId?: Param<string>;
     clientId?: Param<string>;
@@ -12,8 +12,8 @@ export declare type InitParams = {
     viewport?: Param<string>;
     screenResolution?: Param<string>;
 };
-export declare type Item = {
+export type Item = {
     __timestamp: number;
-    tid: string;
+    tid?: string;
     [key: string]: string | number;
 };

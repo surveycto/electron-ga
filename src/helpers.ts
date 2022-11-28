@@ -29,6 +29,7 @@ export const getDefaultInitParams = (): InitParams => {
   };
 };
 
+// @ts-ignore
 export const resolveParam = <T>(value: Param<T>): T => (typeof value === 'function' ? value() : value);
 
 export const prepareItems = (items: Item[], trackId, time): Item[] =>

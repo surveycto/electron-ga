@@ -12,6 +12,6 @@ export declare class Analytics {
     private screenResolution;
     constructor(trackId: string, params?: InitParams);
     send: (hitType?: string, additionalParams?: object) => Promise<void>;
-    private getParams(hitType, additionalParams, time);
+    private getParams;
 }
 export default Analytics;

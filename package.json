@@ -40,30 +40,36 @@
       "ts",
       "js"
     ],
+    "setupFilesAfterEnv": [
+      "./test/setup-jest.js"
+    ],
     "transform": {
-      "^.+\\.(ts)$": "./node_modules/ts-jest/preprocessor.js"
+      "^.+\\.(ts)$": "ts-jest"
     },
     "testMatch": [
       "**/test/**/*.spec.(ts|js)"
     ],
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "moduleNameMapper": {
+      "^@electron/remote$": "<rootDir>/test/mock/remote.mock.ts"
+    }
   },
   "peerDependencies": {},
   "devDependencies": {
-    "electron": "^2.0.18",
-    "@types/electron": "^1.6.10",
-    "@types/jest": "^21.1.8",
-    "@types/node": "^8.10.4",
-    "jest": "^21.2.1",
+    "@electron/remote": "^2.0.8",
+    "@types/jest": "^29.2.3",
+    "@types/node": "^16.17.1",
+    "electron": "19.0.17",
+    "jest": "^29.3.1",
     "rimraf": "^2.6.2",
-    "rollup": "^0.52.1",
-    "rollup-plugin-typescript2": "^0.8.4",
-    "rollup-plugin-uglify": "^2.0.1",
-    "ts-jest": "^21.2.4",
-    "typescript": "^2.8.1"
+    "rollup": "^3.5.0",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "rollup-plugin-uglify": "^6.0.4",
+    "ts-jest": "^29.0.3",
+    "typescript": "^4.9.3"
   },
   "dependencies": {
-    "node-machine-id": "^1.1.9",
-    "qs": "^6.5.1"
+    "node-machine-id": "^1.1.12",
+    "qs": "^6.11.0"
   }
 }
