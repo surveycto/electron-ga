@@ -1,4 +1,4 @@
-import { remote } from 'electron';
+import * as remote from '@electron/remote';
 import { machineIdSync } from 'node-machine-id';
 import { CACHE_KEY_NAME } from './consts';
 import { Item } from './types';
